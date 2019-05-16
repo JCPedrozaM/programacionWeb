@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+
+<head>
+    <title>Ejemplo JSON</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/ejemploJSON.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        table,
+        tr,
+        td {
+            border: 2px solid mediumturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ejemplo JSON</h2>
+    <p>Se definen datos en formato JSON, se muestran dentro de una tabla HTML y además se almacenan como datos locales</p>
+    <hr>
+    <h3>Granja de animales</h3>
+    <div id="divAnimales"></div>
+    <br><br>
+    <button id="btnMostrarTabla">Mostrar Tabla en HTML</button>
+    <div id="divTabla"></div>
+    <br><br> Buscar animal por nombre.
+    <br> Escribir nombre común:
+    <input type="text" id="nombreBuscar"> &nbsp;&nbsp;&nbsp;
+    <button id="btnBuscar"> Buscar  </button>
+    <br><br>
+    <div id="divBuscar">
+        Resultado de la búsqueda
+    </div>
+
+    <br><br> Buscar animal por comida.
+    <br> Escribir comida:
+    <input type="text" id="nombreBuscar1"> &nbsp;&nbsp;&nbsp;
+    <button id="btnBuscar1"> Buscar  </button>
+    <br><br>
+    <div id="divBuscar1">
+        Resultado de la búsqueda
+    </div>
+
+    <br><br>
+    <button id="guardarLocal">
+            Guardar lcoal.
+        </button>
+</body>
+
+</html>

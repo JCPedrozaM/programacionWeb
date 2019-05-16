@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang = "es">
+    <head>
+        <title>Etiqueta Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            canvas{
+                border: 2px crimson solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Etiqueta Canvas</h2>
+        <p>Es propia de HTML5 y define un área para dibujar, reproducir video, animaciones, mostrar contenido de la cámara, etc.</p>
+        <hr>
+        <canvas id = "miCanvas" width="300" height="200"></canvas>
+        <script>
+            var canvas1 = document.getElementById('miCanvas');
+            var contexto = canvas1.getContext('2d');
+            contexto.fillStyle = '#FF0000';
+            contexto.fillRect(20,30,80,120);
+        </script>
+    </body>
+</html>

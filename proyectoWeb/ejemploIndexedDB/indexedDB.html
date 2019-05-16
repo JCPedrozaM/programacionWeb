@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tarea 2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset = utf-8" />
+    <script src="JS/indexedDB.js"></script>
+
+</head>
+
+<body>
+    <h1>IndexedDB</h1>
+    <p>La base de datos que se genera al cargar la página es de la siguiente forma:</p>
+    <code>
+        const empleados = [{
+            id: "1",
+            nombre: "gopal",
+            edad: 35,
+            email: "gopal@tutorialspoint.com"
+        }, {
+            id: "2",
+            nombre: "prasad",
+            edad: 32,
+            email: "prasad@tutorialspoint.com"
+        }];
+    </code>
+    <h2>Agregar Registro</h2>
+    <p>Se agregará el registro 3 con nombre Kenny</p>
+    <button onclick="add()">Agregar Registro </button>
+    <hr>
+    <h2>Leer Registro</h2>
+    <p>Se leerá el registro 3</p>
+    <button onclick="read()">Leer Registro </button>
+    <hr>
+    <h2>Leer Todos</h2>
+    <p>Se leerán todos los registros existentes</p>
+    <button onclick="readAll()">Leer Todo </button>
+    <hr>
+    <h2>Borrar Registro</h2>
+    <p>Se borrará el registro 3</p>
+    <button onclick="remove()">Borrar Registro </button>
+</body>
+
+</html>

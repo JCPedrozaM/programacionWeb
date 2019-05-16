@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+
+<head>
+    <title>Tarea 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Intermedio</h1>
+        <p>Tarea 5</p>
+    </header>
+    <section>
+        <article>
+            <h2>¿Qué es JavaScript?</h2>
+            <p>JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+            <p>Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas​ aunque existe una forma de JavaScript del lado del
+                servidor (Server-side JavaScript o SSJS). </p>
+        </article>
+        <article>
+            <h2>¿Qué nos permite hacer JS?</h2>
+            <p>JavaScript nos permite realizar multiples acciones haciendo uso de objetos, diferentes variables, eventos, entre otros. Para de esta manera generar páginas más dinámicas para el usuario</p>
+            <br>
+            <h3>Array Iteration</h3>
+            <p>Nos permiten llamar a una función que se va a efectuar en cada elemento del arreglo para realizar operaciones como imprimir, comparar todos los elementos con una condición especifica,etc. Ejemplo: </p>
+            <h4>forEach()</h4>
+            <p>Imprimiremos cada elemento del arreglo</p>
+            <p id="forEach"></p>
+            <h4>filter()</h4>
+            <p>Crea un nuevo arreglo con los elementos que cumplan cierta condición, en este caso que sean mayores de 20.</p>
+            <p id="filter"></p>
+            <h3>Date</h3>
+            <p>Nos permite crear un objeto Date el cual nos devolverá la fecha actual si no tiene parametros, o la fecha que querramos si le introducimos parametros. Ejemplo:</p>
+            <p id="fecha"></p>
+            <h4>Métodos para Fecha</h4>
+            <p>Los objetos Date cuentan con métodos que regresan información especifica de la fecha o que nos permiten definir esta información, como podría ser los segundos, milisegundos, mes, año, etc. Ejemplo:</p>
+            <p id="mFecha"></p>
+            <h3>Objeto Math</h3>
+            <p>Este objeto cuenta cpn diversas funciones matemáticas definidas como podrían ser PI, potencia, aleatorio, seno, coseno, etc. Ejemplo: </p>
+            <p id="math"></p>
+            <h3>Booleanos y Comparaciones</h3>
+            <p>Las variables booleanas regresan dos valores: verdadero o falso. Este tipo de variables sirve al momento de hacer comparaciones. Ejemplo: </p>
+            <p id="comp"></p>
+            <h3>Condicionales IF</h3>
+            <p>Nos permiten realizar operaciones siempre y cuando se cumpla cierta condición. Ejemplo: </p>
+            <input type="number" id="num">
+            <p id="si"></p>
+            <button onclick="compararNum()">Comparar</button>
+            <h3>Condicionales SWITCH</h3>
+            <p>Permite a partir de una evaluación determinar que acción se ejecutará de varias. Ejemplo: </p>
+            <p id=dia></p>
+            <button onclick="determinarDia()">Determinar día</button>
+            <h3>Ciclo FOR</h3>
+            <p>Permite realizar instrucciones de manera ciclica con repeticiones contadas. Ejemplo:</p>
+            <p>Se imprimirá este arreglo con ayuda de un ciclo ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"]</p>
+            <p id="for"></p>
+            <button onclick="recorrerArray()">Imprimir Arreglo</button>
+            <h3>Ciclo WHILE</h3>
+            <p>Nos permite realizar instrucciones de manera ciclica siempre y cuando se siga cumpliendo cierta condición. Ejemplo:</p>
+            <p>Se imprimirán números siempre y cuando sean menores a 25</p>
+            <p id="numeros"></p>
+            <button onclick="numWhile()">Imprimir Números</button>
+            <h3>Tipos de Datos</h3>
+            <p>JS nos permite a través de funciones referentes a las variables realizar operaciones como recuperar el tipo de dato, convertirlo a otro,etc. Ejemplo:</p>
+            <p id="tipos"></p>
+            <h3>Operadores Binarios</h3>
+            <p>JS nos permite realizar operaciones binarias, operaciones como AND, OR, XOR, conversión de números, etc. Ejemplo:</p>
+            <p>Introduce un número decimal</p>
+            <input type="number" id="numDec">
+            <p id="binario"></p>
+            <button onclick="convertir()">Convertir número Decimal a Binario</button>
+            <h3>Expresiones Regulares</h3>
+            <p>Una expresión regular es una serie de carácteres que conforman un patrón de busqueda, este tipo de expresiones se puede utilizar para buscar la posición de algún texto o incluso reemplazarlo. Ejemplo:</p>
+            <p id="textoNombre">Hola mi nombre es José</p>
+            <button onclick="cambiarTexto()">Cambiar Texto</button>
+            <h3>Errores</h3>
+            <p>Dado que existen errores, podemos hacer uso de TRY-CATCH para atrapar esos errores y mostrar el mensaje correspondiente a ese error. Ejemplo:</p>
+            <p>Se llamará a una función no definida y aparecerá un mensaje de error</p>
+            <p id="error"></p>
+        </article>
+    </section>
+    <footer>
+        <p>Insituto Tecnológico de Chihuahua II</p>
+        <p>Ingeniería en Sistemas Computacionales</p>
+        <a href="acercaDe.html">Acerca de...</a>
+    </footer>
+</body>
+
+</html>

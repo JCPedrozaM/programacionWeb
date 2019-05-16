@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+
+<head>
+    <title>Dibujar Canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            border: 1px blue solid;
+        }
+    </style>
+    <script src="../JS/dibujarCanvas.js"></script>
+</head>
+
+<body>
+    <h2>Dibujar Canvas</h2>
+    <p>Se usa la API Canvas de HTML5 para dibujar la figura elegida por el usuario</p>
+    <hr>
+    <canvas id="miCanvas" width="400" height="300"></canvas>
+    <br>
+    <table>
+        <tr>
+            <td>
+                Elegir figura:
+                <br>
+                <select id="selectFigura">
+                        <option value="rectangulo">Rectángulo</option>
+                        <option value="circulo">Circulo</option>
+                        <option value="triangulo">Triangulo</option>
+                        <option value="beziercuad">Bézier cuadrática</option>
+                        <option value="beziercub">Bézier cúbica</option>
+                    </select>
+            </td>
+            <td>
+                Elegir color:
+                <br>
+                <input type="color" id="colorFig">
+            </td>
+            <td>
+                Elegir contorno:
+                <br>
+                <input type="color" id="contornoFig">
+            </td>
+            <td>
+                Elegir sombra:
+                <br>
+                <input type="color" id="colorSombra">
+            </td>
+            <td>
+                Elegir color canvas:
+                <br>
+                <input type="color" id="colorCanvas">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnMedidas">Introducir Medidas</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnDibujar">Dibujar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnBorrar">Borrar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnTrasladar">Trasladar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnEscalar">Escalar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnRotar">Rotar</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

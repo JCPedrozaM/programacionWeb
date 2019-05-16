@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Lanzar Moneda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../JS/lanzamiento.js"></script>
+        <style>
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            table{
+                width: 70%;
+            }
+            table, tr, td{
+                border: 1px blue solid;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Lanzar Moneda</h2>
+        <p>Se simula el lanzamiento de una moneda. Se muestra la imagen "sello" o "aguila" de cada lanzamiento, se muestran estadisticas y gráficas.</p>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <input type="button" id="btnLanzar" value=" Lanzar  "> 
+                </td>
+                <td>
+                    <img src="../imagenes/monedaAguila.jpg" alt="moneda méxico" id="moneda">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Estadísticas</b>
+                    <br>
+                    <section id="sectionAguila">Águilas: 0</section>
+                    <section id="sectionCara">Caras: 0</section>
+                    <section id="sectionTotal">Total: 0</section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Gráficas</b>
+                    <br>
+                    Águilas
+                    <input type="range" id="rangoAguila" value="0" min="0" max="100">
+                    <b id="porcentajeAguila">0%</b>
+                    <br><br>
+                    Caras
+                    <input type="range" id="rangoCara" value="0" min="0" max="100">
+                    <b id="porcentajeCara">0%</b>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

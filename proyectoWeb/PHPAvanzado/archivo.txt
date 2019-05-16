@@ -1,0 +1,2 @@
+Este es un archivo txt independiente de la página.
+Hola!

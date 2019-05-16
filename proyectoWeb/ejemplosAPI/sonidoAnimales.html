@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+
+<head>
+    <title>Sonido Animales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        table,
+        tr,
+        td {
+            border: 1px brown solid;
+        }
+        
+        td {
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function escucharAudio(nombreAnimal) {
+            //alert("Animal: " + nombreAnimal)
+            var audioElemento = document.createElement('audio');
+            var rutaNombreArchivo = "../audios/" + nombreAnimal + ".mp3"
+            audioElemento.setAttribute("src", rutaNombreArchivo);
+            audioElemento.play();
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Sonido de Animales</h2>
+    <p>Hacer un click en cada animal de granja para esuchar su sonido</p>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <img src="../imagenes/cerdo.jpg" alt="imagen cerdo" onclick="escucharAudio(this.name)" name="cerdo">
+            </td>
+            <td>
+                <img src="../imagenes/caballo.jpg" alt="imagen caballo" onclick="escucharAudio(this.name)" name="caballo">
+            </td>
+            <td>
+                <img src="../imagenes/oveja.jpg" alt="imagen oveja" onclick="escucharAudio(this.name)" name="oveja">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

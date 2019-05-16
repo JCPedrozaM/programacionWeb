@@ -1,0 +1,266 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 20/02/2019, 09:44:46 PM
+    Author     : JC
+*/
+
+body {
+    background-image: url("../imagenes/fondo.png");
+    background-attachment: fixed;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: mediumseagreen;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.header p {
+    font-family: sans-serif;
+    font-style: inherit;
+    font-size: 25px;
+}
+
+section {
+    background-color: white;
+    padding: 8px;
+}
+
+article {
+    border: 5px solid black;
+    border-radius: 8px;
+    margin: 25px 50px 75px 100px;
+    padding: 8px;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+footer {
+    padding: 5px;
+    text-align: left;
+    background: mediumseagreen;
+}
+
+.footer p {
+    font-family: sans-serif;
+    font-style: inherit;
+    font-size: 25px;
+}
+
+a:link,
+a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: gray;
+}
+
+h3 {
+    font-size: 18;
+    font-family: serif;
+    font-style: italic;
+}
+
+ul {
+    background: seagreen;
+    padding: 20px;
+}
+
+ul li {
+    background: mediumseagreen;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.display li {
+    display: inline;
+}
+
+ol {
+    background: seagreen;
+    padding: 20px;
+}
+
+ol li {
+    background: mediumseagreen;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+#overflow {
+    background: mediumseagreen;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#opaco {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+
+#opaco:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+}
+
+.barra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.barra li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.barra li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#formulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#dibujo {
+    font-size: 50px;
+    font-family: sans-serif;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Imagen y texto aleatorio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            img{
+                width: 100px; height: 100px;
+            }
+        </style>
+        <script>
+            function mostrar(){
+                var textos = [
+                    "HTML es un lenguaje de marcado",
+                    "CSS es para definir estilos",
+                    "JS sirve para programar en HTML",
+                    "Hello!",
+                    "Buenas Noches",
+                    "Dos de suadero por favor"
+                ]
+                var rutasImagenes = new Array(3);
+                rutasImagenes[0] = "../imagenes/imagenHTML.png"
+                rutasImagenes[1] = "../imagenes/imagenCSS.png"
+                rutasImagenes[2] = "../imagenes/imagenJS.png"
+                
+                var num = Math.round(Math.random() * 2);
+                var num2 = Math.round(Math.random() * 5);
+                
+                var seccionTexto = document.getElementById('texto');
+                var seccionImagen = document.getElementById('imagen');
+                
+                seccionTexto.innerHTML = textos[num2];
+                seccionImagen.innerHTML = "<img src='" + rutasImagenes[num] +"' alt='imagen'>";
+            }
+        </script>
+    </head>
+    <body onload="mostrar();">
+        <h2>Imagen y texto aleatorio</h2>
+        <p>Cada vez que se carga la página p es actualizada se muestra una imagen y un texto aleatorios</p>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <section id="imagen"></section>
+                </td>
+                <td>
+                    <section id="texto"></section>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

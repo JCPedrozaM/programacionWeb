@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es" ng-app="store">
+
+<head>
+    <title>Gemas 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../angularJS/angular.min.js"></script>
+    <!--<link rel="stylesheet" href="../bootstrap/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../bootstrap/bootstrap3.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="ejemplo2.js"></script>
+</head>
+
+<body ng-controller="StoreController as store">
+    <h2>Gema 2</h2>
+    <ul class="list-group-item">
+        <li class="list-group-item" ng-repeat="product in store.products">
+            <h3>{{product.name}}</h3>
+            <em>${{product.price}}</em>
+            <img ng-src="{{product.images[0]}}">
+            <button ng-show="product.canPurchase">Agregar al carrito</button>
+            <section ng-init="tab = 1">
+                <ul class="nav nav-pills">
+                    <li ng-class="(active:tab === 1)">
+                        <a href ng-click="tab = 1">Descripción</a>
+                    </li>
+                    <li ng-class="(active:tab === 2)">
+                        <a href ng-click="tab = 2">Especificación</a>
+                    </li>
+                    <li ng-class="(active:tab === 3)">
+                        <a href ng-click="tab = 3">Revisiones</a>
+                    </li>
+                </ul>
+            </section>
+            <div class="panel" ng-show="tab === 1">
+                <h4>Descripción</h4>
+                <p>{{product.description}}</p>
+            </div>
+            <div class="panel" ng-show="tab === 2">
+                <h4>Especificación</h4>
+                <p>Sin Especificación</p>
+            </div>
+            <div class="panel" ng-show="tab === 3">
+                <h4>Revisiones</h4>
+                <p>Sin Revisiones</p>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

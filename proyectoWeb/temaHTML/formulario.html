@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang ="es">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Formulario</h2>
+        Para registrarse en esta aplicación debers proporcionar la información solicitada
+        <br><br>
+        <form method="get" action="recibeFormulario.php">
+            Nombre: *
+            <input type="text" name="nombre" id="nombre" size="20" required>
+            <br><br>
+            Apellidos: *
+            <input type="text" name="apellidos" id="apellidos" size="20">
+            <br><br>
+            Fecha de Nacimietno: *
+            <input type="date" name="fechaNac" id="fechaNac">
+            <br><br>
+            Color Preferido:
+            <input type="color" name="color" id="color">
+            <br><br>
+            Correo Electrónico: *
+            <input type="email" name="correo" id="correo">
+            <br><br>
+            Genero:
+            <br>
+            <input type="radio" name="genero" id="generoF" value="Femenino"> Femenino
+            <br>
+            <input type="radio" name="genero" id="generoM" value="Masculino" > Masculino
+            <br><br>
+            Elegir lugar preferido:
+            <br>
+            <select name="lugar" id="lugar">
+                <option value="Ciudad">Ciudad</option>
+                <option value="Campo">Campo</option>
+                <option value="Playa">Playa</option>
+                <option value="Montana">Montaña</option>
+            </select>
+            <br><br>
+            Número de mascotas
+            <input type="number" min="0" max="500" name="numMascotas" id="numMascotas" value="0">
+            <br><br>
+            Sitio web:
+            <input type="url" name="sitioWeb" id="sitioWeb">
+            <br><br>
+            Foto reciente:
+            <input type="file" name="foto" id="foto">
+            <br><br>
+            Imágen de fondo:
+            <input type="image" name="imagen" id="imagen">
+            <br><br>
+            Contraseña:
+            <input type="password" name="contra" id="contra">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <br><br>
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Tarea 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css">
+    </head>
+    <body>
+        <header>
+            <h1>CSS Intermedio</h1>
+            <p>Tarea 3</p>
+        </header>
+        <section>
+            <article>
+                <h2>¿Qué es CSS?</h2>
+                <p>CSS (siglas en inglés de Cascading Style Sheets), en español "Hojas de estilo en cascada", es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.2​ Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera.</p>
+            </article>
+            <article>
+                <h2>¿Qué se puede hacer con CSS?</h2>
+                <p>CSS es una herramienta que nos permite modificar de manera más sencilla el estilo, un claro ejemplo de esto es esta misma página, sin embargo, veremos algunos ejemplos de la infinidad de cosas que podemos hacer.</p>
+                <br>
+                <h3>Listas</h3>
+                <p>Podemos modificar el estilo de una lista de cualquier tipo para darle un formato especial a los elementos, fondo, etc. Ejemplo:</p>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ul>
+                <br>
+                <h3>Table</h3>
+                <p>En el caso de las tablas contamos con opciones para configurar las propiedades de cada elemento, incluso de cierto elemento, solo los elementos pares, impares, etc. Ejemplo:</p>
+                <table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>Griffin</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Lois</td>
+                        <td>Griffin</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>Swanson</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Cleveland</td>
+                        <td>Brown</td>
+                        <td>$250</td>
+                    </tr>
+                </table>
+                <br><br>
+                <h3>Propiedad Display</h3>
+                <p>La propiedad display nos permite decidir si un objeto es visible o no, también permite cambiar la orgnización de los objetos como podría ser en una sola línea. Ejemplo:</p>
+                <ol class="display">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ol>
+                <br>
+                <h3>Propiedad Overflow</h3>
+                <p>Esta propiedad nos permite colocar ventanas de un tamaña definido y que cuenten con su respectivas barras de desplazamiento para de esta manera poder ver todo el contenido.Ejemplo:</p>
+                <p id="overflow">This text is really long and the height of its container is only 200 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem</p>
+                <h3>Atributo Float</h3>
+                <p>Este atributo permite decidir la posición de un objeto, como podría ser el caso de una imágen dentro de un parrafo. Ejemplo: </p>
+                <div class="clearfix">
+                    <div class="img-container">
+                        <img src="imagenes/bosque.jpg" style="width:100%">
+                    </div>
+                    <div class="img-container">
+                        <img src="imagenes/monta.jpg" style="width:100%">
+                    </div>
+                    <div class="img-container">
+                        <img src="imagenes/playa.jpeg" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <h3>Atributo Opacidad</h3>
+                <p>Este atributo nos permite cambiar la opacidad de los elementos. Ejemplo: </p>
+                <img src="imagenes/bosque.jpg" width="250" height="200" id="opaco">
+                <br>
+                <h3>Barras de Navegación</h3>
+                <p>Gracias a CSS podemos crear barras de navegación como las que comunmente vemos en cualquier página web. Ejemplo: </p>
+                <ul class="barra">
+                    <li class="barra"><a href="#home" class="barra">Home</a></li>
+                    <li class="barra"><a href="#news" class="barra">News</a></li>
+                    <li class="barra"><a href="#contact" class="barra">Contact</a></li>
+                    <li class="barra"><a href="#about" class="barra">About</a></li>
+                </ul>
+                <br>
+                <h3>Menú Desplegable</h3>
+                <p>Gracias a las herramientas de CSS podemos crear menús desplegables con la detección de la posición del cursor. Ejemplo:</p>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <br>
+                <h3>Formularios</h3>
+                <p>CSS nos permite crear formularios para de esta manera obtener datos del usuario y proccesarlos según queramos. Ejemplo: </p>
+                <div id="formulario">
+                    <form action="/action_page.php">
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">País</label>
+                        <select id="country" name="country">
+                            <option value="australia">México</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>Insituto Tecnológico de Chihuahua II</p>
+            <p>Ingeniería en Sistemas Computacionales</p>
+            <a href="acercaDe.html">Acerca de...</a>
+        </footer>
+    </body>
+</html>

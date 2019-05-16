@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+
+<head>
+    <title>Examen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <section>
+        <article>
+            <form method="get" action="recibeFormulario.php">
+                Nombre: *
+                <input type="text" name="nombre" id="nombre" size="20" required>
+                <br><br> Apellidos: *
+                <input type="text" name="apellidos" id="apellidos" size="20">
+                <br><br> Color Preferido:
+                <input type="color" name="color" id="color">
+                <br><br> Correo Electrónico: *
+                <input type="email" name="correo" id="correo">
+                <br><br>
+                <input type="submit" value="Enviar">
+                <br><br>
+                <input type="reset" value="Limpiar">
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Insituto Tecnológico de Chihuahua II</p>
+        <p>Ingeniería en Sistemas Computacionales</p>
+        <a href="../indexExa.html">Inicio</a>
+    </footer>
+</body>
+
+</html>

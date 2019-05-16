@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es" ng-app="store">
+
+<head>
+    <title>Proyecto Gemas 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../angularJS/angular.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="ejemplo1.js"></script>
+</head>
+
+<body ng-controller="StoreController as store">
+    <h2>Proyecto Gemas 1</h2>
+    <div ng-repeat="product in store.products">
+        <h3>{{product.name}}</h3>
+        <h4 ng-show="product.price<=100">${{product.price}}</h4>
+        <h4 ng-show="product.price>100">*Preguntar precio*</h4>
+        <p>{{product.description}}</p>
+        <img ng-src="{{product.images[0]}}">
+        <button ng-show="product.canPurchase">Agregar al carrito</button>
+    </div>
+</body>
+
+</html>

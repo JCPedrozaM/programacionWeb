@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2019, 12:31:20 PM
+    Author     : JC
+*/
+
+/*
+    Por palabra clave
+*/
+
+body{
+ font-size: 10px;
+ background-color: gray;
+}
+
+div{
+    font-size: 50px;
+    background-color: yellow;
+    color: orange;
+    border: 1px
+}
+
+/*
+    Por el ID
+*/
+
+#parrafo1{
+    font-size: 20px;
+    background-color: white;
+}
+
+/*
+    Por el atributo Class
+*/
+
+.clase1{
+    font-style: italic;
+    background-color: brown;
+}

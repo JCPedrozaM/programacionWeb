@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Página Saludo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function saludo(){
+                var nombre1 = document.getElementById('nombre').value;
+                var mensaje1 = document.getElementById('mensajesaludo');
+                mensaje1.innerHTML = "Hola " + nombre1 + " bienvenido a programar con JS"; 
+            }
+            function saludoinicial(){
+                var nombre1 = prompt("Nombre "," ");
+                alert ("Hola " + nombre1 + " Bienvenido a JS")
+            }
+        </script>
+    </head>
+    <body onload="saludoinicial();">
+        <h2>Página Saludo</h2>
+        <p>Primer ejemplo de JavaScript. Este es un lenguaje de programación integrado con HTML y CSS, que nos permite incluir programación y aspectos dinámicos. Es un lenguaje interpretado.</p>
+        <hr>
+        <br><br>
+        Escribe tu nombre:
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        <section id="mensajesaludo">Mensaje</section>
+        <br><br>
+        <button onclick="saludo();">Saludo</button>
+    </body>
+</html>

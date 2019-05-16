@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Tarea 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css">
+        <script src="JS/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Introducción</h1>
+            <p>Tarea 4</p>
+        </header>
+        <section>
+            <article>
+                <h2>¿Qué es JavaScript?</h2>
+                <p>JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                <p>Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas4​ aunque existe una forma de JavaScript del lado del servidor (Server-side JavaScript o SSJS). </p>
+            </article>
+            <article>
+                <h2>¿Qué nos permite hacer JS?</h2>
+                <p>JavaScript nos permite realizar multiples acciones haciendo uso de objetos, diferentes variables, eventos, entre otros. Para de esta manera generar páginas más dinámicas para el usuario</p>
+                <br>
+                <h3>Objetos en JS</h3>
+                <p>JS nos permite generar objetos, los cuales serían variables con multiples parametros Por ejemplo una persona puede dividirse en nombre y apellidos, por lo que podemos generar un objeto que sea de la siguiente manera: </p>
+                <code>var persona = {nombre:"Carlos", aPat:"Pedroza", aMat:"Marroquín"};</code>
+                <p>De este manera podríamos imprimir cada parte del objeto de manera independiente, identificandolo con su nombre:</p>
+                <p id="nombre"></p>
+                <br>
+                <h3>Eventos</h3>
+                <p>JS permite trabajar en los diferentes eventos que cuentan los objetos, por ejemplo al hacer "click" en un botón</p>
+                <button onclick="this.innerHTML = Date()">Obtener Hora</button>
+                <br><br>
+                <h3>Variables tipo String</h3>
+                <p>String es el tipo de variable que utiliza JS para la manipulación de Texto. Estos pueden ser difinidos usando tanto comillas simples como dobles, y cuentan con funciones ya determinadas que sirven para realziar acciones como determinar la posición de una palabra. Ejemplo: </p>
+                <p>Este es un texto prueba (Para la posición los espacios en blanco cuentan y la posición es por carácter)</p>
+                <p id="posicion"></p>
+                <h4>Reemplazar texto</h4>
+                <p>Otra de las funciones, y una de las más utilizadas es reemplazar el texto que ya está escrito por otro. Ejemplo: </p>
+                <p id="reemplazar">Holaaa!</p>
+                <button onclick="reemplazar()">Remplazar</button>
+                <br>
+                <h3>Variables tipo Número</h3>
+                <p>JS cuenta con la posibilidad de manejar número de cualquier tipo, ya sea enteros, decimales, hexadecimales, entre otros. Estos tipo de variable cuentan con funciones ya definidas.</p>
+                <h4>Infinity</h4>
+                <p>Infinity es un tipo de valor que puede adoptar un número, este indica que el número es mayor a la longitud máxima permitida  para un número. Ejemplo:</p>
+                <p id="infinito"></p>
+                <h4>Definir formato</h4>
+                <p>JS cuenta con funciones para determinar la cantidad de digitos máximos de un número o la cantidad de decimales máximos redondeando el número. Ejemplo: </p>
+                <h5>Redondear</h5>
+                <pre>
+                <code>
+                    var x = 9.656;
+                    x.toFixed(0);           // returns 10
+                    x.toFixed(2);           // returns 9.66
+                    x.toFixed(4);           // returns 9.6560
+                    x.toFixed(6);           // returns 9.656000
+                </code>
+                </pre>
+                <h5>Presición</h5>
+                <pre>
+                <code>
+                    var x = 9.656;
+                    x.toPrecision();        // returns 9.656
+                    x.toPrecision(2);       // returns 9.7
+                    x.toPrecision(4);       // returns 9.656
+                    x.toPrecision(6);       // returns 9.65600
+                </code>
+                </pre>
+                <h3>Arreglos</h3>
+                <p>Los arreglos son un tipo de estructura de datos que nos permite almacenar múltiples variables en un solo conjunto ordenado por posición. La sintaxis es la siguiente:</p>
+                <code>var cars = ["Saab", "Volvo", "BMW"];</code>
+                <h4>Arreglo Impreso</h4>
+                <p id="arreglo"></p>
+                <p>Al igual que el resto de variables los arreglos cuentan con funciones determinadas, con estas funciones se pueden realziar acciones como agregar,eliminar y modificar posiciones.</p>
+                <h4>Función pop</h4>
+                <p>Esta funcion permite borrar el último elemento del arreglo. Ejemplo:</p>
+                <p id="arreglo2"></p>
+                <code>cars.pop();</code>
+                <p id="arregloPop"></p>
+                <h4>Función push</h4>
+                <p>Esta funcion permite agregar un elemento al final del arreglo. Ejemplo:</p>
+                <p id="arreglo3"></p>
+                <code>cars.push("Audi");</code>
+                <p id="arregloPush"></p>
+                <h4>Ordenar Arreglo</h4>
+                <p>Un arreglo se puede ordenar a través de la función sort (ascendente) o reverse (descendente). Ejemplo: </p>
+                <p id="ordenar">Banana,Orange,Apple,Mango</p>
+                <button onclick="ordenarAsc()">Ordenar Ascendente</button>
+                <button onclick="ordenarDesc()">Ordenar Descendente</button>
+            </article>
+        </section>
+        <footer>
+            <p>Insituto Tecnológico de Chihuahua II</p>
+            <p>Ingeniería en Sistemas Computacionales</p>
+            <a href="acercaDe.html">Acerca de...</a>
+        </footer>
+    </body>
+</html>

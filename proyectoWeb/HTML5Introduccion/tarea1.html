@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+Tarea 1: Introducción HTML
+Autor: José Carlos Pedroza Marroquín
+Fecha de entrega: 8/Febrero/2019
+-->
+<html lang="es">
+    <head>
+        <title>Tarea 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p.p1{
+                color: red;
+                font-family: fantasy;
+                font-size: 200%;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introducción a HTML5</h1>
+        <p>HTML5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. </p>
+        <p>En esta página veremos el uso de las principales etiquetas de HTML</p>
+        <br>
+        <h2>1. Titulos en HTML</h2>
+        <p>Existen diversos tipos de titulos en HTML, los cuales se clasifican en 6 tamaños dados por las etiquetas h1 hasta h6, siendo h1 la de mayor prioridad. A continuación se puede observar los tipos:</p>
+        <br>
+        <h1>Esto es un ejemplo de titulo h1</h1>
+        <h2>Esto es un ejemplo de titulo h2</h2>
+        <h3>Esto es un ejemplo de titulo h3</h3>
+        <h4>Esto es un ejemplo de titulo h4</h4>
+        <h5>Esto es un ejemplo de titulo h5</h5>
+        <h6>Esto es un ejemplo de titulo h6</h6>
+        <br><br>
+        <h2>2. Vínculos en HTML</h2>
+        <p>Para hacer uso de un vínculo es necesario la etiqueta "a", la cual contendrá el link con href en la etiqueta de apertura y el texto que se quiera usar se ubicará entre la etiqueta de apertura y cierre.</p>
+        <p>El siguiente vínculo te dirigirá a la página w3schools donde podrás aprender sobre HTML5</p>
+        <a href="https://www.w3schools.com">Este link te llevará a w3schools</a>
+        <br><br>
+        <h2>3. Imágen en HTML</h2>
+        <p>HTML también nos permite colocar imagenes en nuestra página a través de la etiqueta "img". Para hacer uso de esta etiqueta solo hace falta tener una imágen en nuestro proyecto e indicar la ruta.</p>
+        <img src = "imagenes/imagenHTML.png" alt = "Imagen HTML" width="100" height="100">
+        <br><br>
+        <h2>4. Listas</h2>
+        <p>HTML nos permite hacer uso de diferentes listas, ya sea sin orden o numeradas. Cada elemento de una lista se define con la etiqueta "li" </p>
+        <h3>Ejemplo de lista sin ordenar (ul)</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <h3>Ejemplo de lista numerada (ol)</h3>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <h2>5. Atributos</h2>
+        <p>HTML cuenta con la opción de editar los diferentes atributos de las etiquetas, por ejemplo cambiar el tamaño de una imágen, cambiar el color de la fuente, colocar un nombre identificardor, etc</p>
+        <h3>Ejemplo de imágen con diferentes dimensiones (widht y height)</h3>
+        <img src = "imagenes/imagenHTML.png" alt = "Imagen HTML" width="200" height="200">
+        <img src = "imagenes/imagenHTML.png" alt = "Imagen HTML" width="150" height="150">
+        <img src = "imagenes/imagenHTML.png" alt = "Imagen HTML" width="100" height="100">
+        <h3>Ejemplo de color de fuente (style)</h3>
+        <p style="color:red">Esto es un parrafo de color rojo</p>
+        <h2>6. Divisor Horizontal</h2>
+        <p>HTML cuenta con una etiqueta que nos permite poner divisiones de manera horizontal (hr) ya sea entre parrafos, titulos o algún otro elemento.</p>
+        <h3>Ejemplo de divisor horizontal:</h3>
+        <h4>Parte superior</h4>
+        <hr>
+        <h4>Parte inferior</h4>
+        <h2>7. Párrafos</h2>
+        <p>HTML cuenta con dos tipos de párrafo, "p" y "pre". En el caso de la etiqueta "p" nos permitirá escribir un parrafo de manera líneal sin importar como escribamos el texto entre etiquetas. En el caso de la etiqueta "pre" esta nos ayuda a escribir un parrafo de la manera en que la escribimos entre la etiqueta de apertura y cierre.</p>
+        <h3>Ejemplo de "pre"</h3>
+        <pre>
+            My Bonnie lies over the ocean.
+
+            My Bonnie lies over the sea.
+
+            My Bonnie lies over the ocean.
+
+             Oh, bring back my Bonnie to me.
+        </pre>
+        <h3>Ejemplo de "p" (mismo texto)</h3>
+        <p>My Bonnie lies over the ocean.
+
+            My Bonnie lies over the sea.
+
+            My Bonnie lies over the ocean.
+
+            Oh, bring back my Bonnie to me.</p>
+        <h2>8. Atributo Style</h2>
+        <p>Como ya se mencionó los atributos nos permiten editar las caracteristicas de los elementos. En el caso de la etiqueta style esta nos ayuda a dar formato a todo aquello que se refiere al estilo, como lo es el color, tipo y tamaño de fuente, fondo, etc.</p>
+        <h3>Ejemplo de párrafo modificado</h3>
+        <p style="background-color: blue; font-family: cursive; color: red">Este es un ejemplo de un párrafo con fuente, color y fondo distinto al resto.</p>
+        <h2>9. Estilo de texto</h2>
+        <p>Existen diversas etiquetas que nos ayudan a dar diferente estilo a la fuente que estamos utilizando, ya sea negritas, cursiva, subrayado, etc.</p>
+        <h3>Ejemplo texto en negritas (strong)</h3>
+        <strong>Este es un texto en negritas</strong>
+        <h3>Ejemplo texto cursivo (i)</h3>
+        <i>Este es un texto cursivo</i>
+        <h3>Ejemplo texto subrayado</h3>
+        <ins>Este es un texto subrayado</ins>
+        <h2>10. Citas</h2>
+        <p>HTML nos proporciona etiquetas que nos ayudan a realizar de manera más simple citas textuales, ya sea una cita corta, cita larga, incluso contiene herramietas que permiten dar el significado de abreviaturas, escribir de derecha a izquierda, etc.</p>
+        <h3>Ejemplo cita larga</h3>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+        </blockquote>
+        <h3>Ejemplo de abreviatura</h3>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <h3>Ejemplo de texto izquierda-derecha</h3>
+        <bdo dir="rtl">Este es un texto escrito de derecha a izquierda</bdo>
+        <h2>11. CSS</h2>
+        <p>CSS (siglas en inglés de Cascading Style Sheets), en español "Hojas de estilo en cascada", es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</p>
+        <p>CSS nos ayuda a definir el formato general a cada tipo de etiqueta o bien a una etiqueta especifica a través de un nombre o bien a todo un conjunto de etiquetas que colocamos dentro de una clase</p>
+        <h3>Ejemplo de parrafo con estilo definido</h3>
+        <p class="p1">Este parrafo fue colocado en una clase llamada "p1" a la cual se le dio un formato definido</p>
+        <h2>12. Tablas</h2>
+        <p>HTML nos permite realizar tablas a través de varias etiquetas: "table" para crear una tabla, "th" para los encabezados, "tr" para las filas y "td" para las columnas.</p>
+        <h3>Ejemplo de Tabla</h3>
+        <table>
+            <tr>
+                <th>Nombre</th><th>Apellido</th><th>Número de control</th>
+            </tr>
+            <tr>
+                <td>José Carlos</td><td>Pedroza</td><td>16550477</td>
+            </tr>
+        </table>
+    </body>
+</html>

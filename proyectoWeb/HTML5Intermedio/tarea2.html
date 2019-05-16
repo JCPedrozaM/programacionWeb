@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Tarea 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .div1{
+                background-color: black;
+                color: white;
+                margin: 20px;
+                padding: 20px;
+            }
+            #div2{
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML5 Intermedio</h1>
+        <p>En esta página se encontrarán los temas de HTML5 con respecto a la tarea 2</p>
+        <br><br>
+        <h2>1. Listas</h2>
+        <p>HTML nos permite hacer uso de diferentes listas clásicas, ya sea sin orden o numeradas. Cada elemento de una lista se define con la etiqueta "li" </p>
+        <p>Además de las listas clásicas HTML nos permite realizar listas decriptivas con ayuda de las etiquetas "dl" (para la lista), "dt" (nivel superior), "dd" (nivel inferior)</p>
+        <h3>Ejemplo de lista sin ordenar (ul)</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <h3>Ejemplo de lista numerada (ol)</h3>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <h3>Ejemplo de lista descriptiva (dl)</h3>
+        <dl>
+            <dt>Nivel superior</dt>
+            <dd>Nivel inferior</dd>
+            <dt>Nivel superior</dt>
+            <dd>Nivel inferior</dd>
+        </dl>
+        <h2>2. Elementos de Bloque y en línea</h2>
+        <p>HTML cuenta con diversas etiquetas que nos permiten dividir cadenas en diferentes bloques o bien, colocarlos en la misma línea</p>
+        <h3>Etiquetas de bloque</h3>
+        <img src="imagenes/elementosBloque.PNG">
+        <h4>Ejemplo DIV</h4>
+        <div>Esto es un texto dentro de una etiqueta DIV</div>
+        <div>Esto es un texto dentro de una etiqueta DIV</div>
+        <h3>Etiquetas Inline</h3>
+        <img src="imagenes/elementosInline.PNG">
+        <h4>Ejemplo SPAN</h4>
+        <span>Este es un texto dentro de una etiqueta SPAN</span>
+        <span>Este es un texto dentro de una etiqueta SPAN</span>
+        <h2>3. Clases</h2>
+        <p>HTML nos permite colocar el atributo clase en diferentes etiquetas y de esta manera agruparlas para definir los atributos generales con los que contarán cada uno de los elementos pertenecientes a la clase</p>
+        <h3>Ejemplo de una clase para etiqueta div</h3>
+        <div class="div1">Esta etiqueta forma parte de la clase div1</div>
+        <h2>4. Atributo ID</h2>
+        <p>Simillar a las clases este atributo nos permite diferenciar un elemento en especifico para de esta manera indicar con que atributos contará</p>
+        <h3>Ejemplo de ID para etiqueta div</h3>
+        <div id="div2">Esta etiqueta cuenta con id="div2"</div>
+        <h2>5. Etiqueta Iframe</h2>
+        <p>Esta etiqueta nos permite colocar una ventana que muestre una página web dentro de nuestra propia página</p>
+        <h3>Ejemplo</h3>
+        <iframe src="https://es.wikipedia.org/" height="500" width="750">Wikipedia</iframe>
+        <h2>6. JavaScript</h2>
+        <p>JavaScript es una herramienta que nos permite crear páginas HTML interactivas a través de objetos dinámicos como es el caso de botones</p>
+        <h3>Ejemplo botón</h3>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click para escribir fecha y hora</button>
+        <p id="demo"></p>
+        <h2>7. Rutas (src)</h2>
+        <p>src es un atributo que nos permite determinar la ruta donde se encuentra el contenido que deamos mostrar, ya sea imagenes, páginas, etc.</p>
+        <h3>Ejemplo de imágen contenida en:imagenes/elementosInline.PNG </h3>
+        <img src="imagenes/elementosInline.PNG">
+        <h2>8. Cabecera (Head)</h2>
+        <p>La cabecera es donde se colocan los metadatos de nuestra página, com puede ser los estilos definidos para algunos componentes,palabras claves para buscadores, etc.</p>
+        <h3>Ejemplo Head</h3>
+        <img src="imagenes/head.PNG">
+        <h2>9. Layout</h2>
+        <p>HTML contiene elementos semánticos que nos permiten dividir los datos de una página en secciones como es el caso de una revista</p>
+        <h3>Ejemplo:</h3>
+        <a href="paginaLayout.html">Este link te llevará al ejemplo</a>
+        <h2>10. Elementos de Código</h2>
+        <p>HTML cuenta con diversas etiquetas que nos permiten escribir elementos que forman parte de un código, comando, etc. y diferenciarlo del texto normal</p>
+        <h3>Ejemplo etiqueta code</h3>
+        <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+        <h2>11. Simbolos y Caracteres</h2>
+        <p>HTML cuenta con caracteres definidos para su lenguaje, por lo que se tienen que usar códigos especificos para mostrarlos, como es el caso de &lt; y &gt;. Además de estos casos existen otros como los caracteres especiales que usa el Español, esto se puede arreglar haciendo uso de charset el cual nos permite hacer uso de estos caracteres de forma normal, en el caso de esta página se usa UTF-8 </p>
+        <h2>12. XHTML</h2>
+        <p>XHTML (eXtensible HyperText Markup Language), es básicamente HTML expresado como XML válido. Es más estricto a nivel técnico, pero esto permite que posteriormente sea más fácil al hacer cambios o buscar errores entre otros. Su objetivo es avanzar en el proyecto del World Wide Web Consortium de lograr una web semántica, donde la información, y la forma de presentarla estén claramente separadas. </p>
+    </body>
+</html>

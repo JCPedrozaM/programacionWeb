@@ -1,0 +1,115 @@
+body {
+    background-image: url("../imagenes/fondo.png");
+    background-attachment: fixed;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: mediumseagreen;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.header p {
+    font-family: sans-serif;
+    font-style: inherit;
+    font-size: 25px;
+}
+
+section {
+    background-color: white;
+    padding: 8px;
+}
+
+article {
+    border: 5px solid black;
+    border-radius: 8px;
+    margin: 25px 50px 75px 100px;
+    padding: 8px;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+footer {
+    padding: 5px;
+    text-align: left;
+    background: mediumseagreen;
+}
+
+.footer p {
+    font-family: sans-serif;
+    font-style: inherit;
+    font-size: 25px;
+}
+
+a:link,
+a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: gray;
+}
+
+h3 {
+    font-size: 18;
+    font-family: serif;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 2px black;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #7ce6d4
+}
+
+th {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+#acercaDe {
+    border: 5px solid black;
+    padding: 25px 50px;
+    background-color: mediumseagreen;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-right: 250px;
+    margin-left: 250px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.titulo {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/02/2019, 01:12:48 PM
+    Author     : JC
+*/
+
+body{
+    font-family: verdana, sans-serif;
+    font-size: 0.8em;
+}
+
+header,footer,section,article,aside{
+    border: 1px solid gray;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+header, footer{
+    color: white;
+    background-color: seagreen; 
+}
+
+section{
+    background-color: #ddd;
+    width: 70%;
+    height: 320px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 5px;
+}
+
+#derecha{
+    width: 20%;
+    float: right;
+    height: 320px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Libro</title>
+    <script>
+        function mostraralerta() {
+            alert('hizo clic!');
+        }
+
+        function hacerclic() {
+            document.getElementsByTagName('p')[0].onclick = mostraralerta;
+        }
+        window.onload = hacerclic;
+    </script>
+    <script src="scripts/micodigo.js"></script>
+</head>
+
+<body>
+    <div id="principal">
+        <p onclick="alert('Hizo click')">Hacer Clic</p>
+        <p>No puede hacer clic</p>
+    </div>
+</body>
+
+</html>

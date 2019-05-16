@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 8</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script>
+        function showHint(str) {
+            if (str.length == 0) {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txtHint").innerHTML = this.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "gethint.php?q=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+    <script>
+        function showUser(str) {
+            if (str == "") {
+                document.getElementById("txtHint2").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint2").innerHTML = this.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getproduct.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>PHP AJAX</h1>
+        <p>Tarea 8</p>
+    </header>
+    <section>
+        <article>
+            <h1>¿Qué es AJAX?</h1>
+            <p>AJAX es una tecnología que nos permite realizar acciones en una página web que necesiten respuesta del servidor sin recargarla.</p>
+        </article>
+        <article>
+            <h1>PHP-AJAX</h1>
+            <p>A continuación se muestra un ejemplo de AJAX en PHP haciendo uso de un buscador en tiempo real.</p>
+            <p><b>Empieza a Escribir una comida:</b></p>
+            <form>
+                Comida: <input type="text" onkeyup="showHint(this.value)">
+            </form>
+            <p>Sugerencias: <span id="txtHint"></span></p>
+            <br><br>
+            <h1>AJAX-Databases</h1>
+            <p>Con AJAX podemos tomar datos de una base de datos que tengamos en nuestro servidor, ejemplo:</p>
+            <p>Elija un producto</p>
+            <form>
+                <select name="producto" onchange="showUser(this.value)">
+                    <option value="">Selecciona un producto:</option>
+                    <option value="1">Nito Bimbo</option>
+                    <option value="2">Martillo</option>
+                    <option value="3">Xbox</option>
+                    <option value="4">Silla</option>
+                    </select>
+            </form>
+            <br>
+            <div id="txtHint2"><b>La información del producto se mostrará aquí abajo</b></div>
+        </article>
+    </section>
+    <footer>
+        <p>Insituto Tecnológico de Chihuahua II</p>
+        <p>Ingeniería en Sistemas Computacionales</p>
+        <a href="acercaDe.html">Acerca de...</a>
+    </footer>
+</body>
+
+</html>
